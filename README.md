@@ -10,5 +10,5 @@ How To Use:
   3.Example: python3 dirfinder.py -u https://www.target.com -l wordlist.txt
 
   
-If you face any kind of problem with my tools,
-Contact me: senguptatanay6@gmail.com
+If you face any kind of problem with my tools,Contact me: senguptatanay6@gmail.com
+
