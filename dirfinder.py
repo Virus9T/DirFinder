@@ -70,7 +70,7 @@ if __name__=="__main__":
 	  banner()
 	  try:
 	  	main()
-	  except IndexError as e:
+	  except IndexError:
 	  	help()
 	  	exit()
 			
