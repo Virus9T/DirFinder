@@ -1,35 +1,17 @@
-#created by WhiteRaven
-
 #needes modules
 import sys
 import requests
-import threading
+import time
 
 #banner
 def banner():
-	#color codes
-	print('''\033[1;32;40m
-
-
- /$$$$$$$  /$$           /$$$$$$$$ /$$                 /$$                    
-| $$__  $$|__/          | $$_____/|__/                | $$                    
-| $$  \ $$ /$$  /$$$$$$ | $$       /$$ /$$$$$$$   /$$$$$$$  /$$$$$$   /$$$$$$ 
-| $$  | $$| $$ /$$__  $$| $$$$$   | $$| $$__  $$ /$$__  $$ /$$__  $$ /$$__  $$
-| $$  | $$| $$| $$  \__/| $$__/   | $$| $$  \ $$| $$  | $$| $$$$$$$$| $$  \__/
-| $$  | $$| $$| $$      | $$      | $$| $$  | $$| $$  | $$| $$_____/| $$      
-| $$$$$$$/| $$| $$      | $$      | $$| $$  | $$|  $$$$$$$|  $$$$$$$| $$      
-|_______/ |__/|__/      |__/      |__/|__/  |__/ \_______/ \_______/|__/                                                                                  
-       						   created by Virus9T
-[DESCLIMER]: This port scanner tool is provided for educational and authorized testing purposes only.
+	print('''
+	Web Endpoint Exposure Audit Tool
+	
+[DESCLIMER]: This tool is provided for educational and authorized testing purposes only.
 The developer of this software takes no responsibility or liability for any misuse, damage, legal consequences, or unauthorized activity conducted using this tool.
 [CREATED BY]: Virus9T
-
-
-
-       ''')
-	
-	
-	
+''')	
 #function to help people
 def help():
 		print("\n\n\t\tType: python3 dirfinder.py -u [URL] -f [wordlist file]\n\n")
@@ -65,6 +47,7 @@ def main():
 				#code 200
 				if getResp.status_code==200:
 					print(f"{green}FOUND[{getResp.status_code}]      :   {editedUrl}")
+				time.sleep(1)
 			except requests.exceptions.ConnectionError:
 				print("NO ADDRESS ASSOCIATED WITH HOST NAME !!!!")
 				help()
