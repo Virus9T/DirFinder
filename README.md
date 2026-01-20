@@ -10,4 +10,4 @@ How To Use:
 
     Example: python3 dirfinder.py -u https://www.target.com -l wordlist.txt
 
-If u face any kind of problem the tool, contact me:senguptatanay6@gmail.com
+If u face any kind of problem related to the tool, contact me:senguptatanay6@gmail.com
