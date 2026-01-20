@@ -7,6 +7,12 @@ import threading
 
 #banner
 def banner():
+	#color codes
+bright_red = "\033[91m"
+bright_green = "\033[92m"
+bright_yellow = "\033[93m"
+bright_cyan = "\033[96m"
+reset = "\033[0m"
 	print('''\033[1;32;40m
 
 
@@ -18,11 +24,15 @@ def banner():
 | $$  | $$| $$| $$      | $$      | $$| $$  | $$| $$  | $$| $$_____/| $$      
 | $$$$$$$/| $$| $$      | $$      | $$| $$  | $$|  $$$$$$$|  $$$$$$$| $$      
 |_______/ |__/|__/      |__/      |__/|__/  |__/ \_______/ \_______/|__/                                                                                  
-       						   created by WhiteRaven
+       						   created by Virus9T
+{bright_red}[DESCLIMER] {reset}: This port scanner tool is provided for educational and authorized testing purposes only.
+The developer of this software takes no responsibility or liability for any misuse, damage, legal consequences, or unauthorized activity conducted using this tool.
+{bright_green}[CREATED BY]{reset}: Virus9T
 
 
 
        ''')
+	
 	
 	
 #function to help people
